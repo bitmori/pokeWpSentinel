@@ -53,7 +53,7 @@
             // 
             this.notifyIcon.ContextMenuStrip = this.CMenu;
             this.notifyIcon.Icon = ((System.Drawing.Icon)(resources.GetObject("notifyIcon.Icon")));
-            this.notifyIcon.Text = "notifyIcon";
+            this.notifyIcon.Text = "Poke Wallpaper Sentinel\r\n - v 0.0.2";
             this.notifyIcon.Visible = true;
             this.notifyIcon.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.notifyIcon_MouseDoubleClick);
             // 
@@ -186,7 +186,7 @@
             this.MinimizeBox = false;
             this.Name = "mainform";
             this.ShowInTaskbar = false;
-            this.Text = "Poke Tool Kit";
+            this.Text = "Poke Wallpaper Sentinel";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.mainform_Closing);
             this.Load += new System.EventHandler(this.mainform_Load);
             this.CMenu.ResumeLayout(false);

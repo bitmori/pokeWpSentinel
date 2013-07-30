@@ -47,6 +47,7 @@ namespace pokeTools
             }
 
             TickTimer.Start();
+            StartUp();
         }
 
         private void mainform_Closing(object sender, FormClosingEventArgs e)
@@ -60,6 +61,11 @@ namespace pokeTools
 
         private void AddBtn_Click(object sender, EventArgs e)
         {
+            if (pathBox.Text.Length == 0)
+            {
+                MessageBox.Show("Invalid wallpaper file.");
+                return;
+            }
             int index = wpc.wp.FindIndex(w => (w.hr == hourBox.Value && w.min == minuteBox.Value));
             if (index >= 0)
             {
